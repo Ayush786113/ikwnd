@@ -6,7 +6,7 @@
 }
 body{
     // background-color: #7f7fd5;
-    background-color: $primary_colour;
+    background-color: $secondary_colour;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -14,16 +14,17 @@ body{
 ul{
     list-style: none;
     li{
-        color: white;
-        border-color: black;
+        color: $secondary_colour;
+        border-color: $secondary_colour;
         border-style: double;
+        font-family: $exp_font;
         font-weight: bold;
         margin: 1rem;
         padding: 1rem;
         list-style: none;
         border-style: ridge;
         border-radius: 25px;
-        box-shadow: -10px 10px rgba($color: $secondary_colour, $alpha: 0.3);
+        box-shadow: -10px 10px rgba($color: $primary_colour, $alpha: 0.3);
         // box-shadow: 10px 10px #ffffff;
         // background: linear-gradient(#28FFBF, #BCFFB9);
         // background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);

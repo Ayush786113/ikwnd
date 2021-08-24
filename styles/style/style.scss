@@ -5,12 +5,21 @@
 }
 
 body{
-    background-colour: $primary_colour;
+    background-color: $secondary_colour;
     padding: $padding;
 }
 
 h1, p{
     text-align: center;
+}
+
+h1{
+    font-family: $heading_font;
+    color: $accent_colour;
+}
+p{
+    color: $primary_colour;
+    font-family: $paragraph_font;
 }
 
 .buttons{
@@ -34,10 +43,10 @@ h1, p{
         font-size: 25px;
         border: none;
         background-color: $accent_colour;
-        color: $primary_colour;
+        color: $secondary_colour;
         cursor: pointer;
         &:hover{
-            background-color: $primary_colour;
+            background-color: $secondary_colour;
             color: $accent_colour;
             border: 3px solid $accent_colour;
         }

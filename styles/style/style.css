@@ -1,15 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto+Mono:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto+Mono:ital,wght@1,300&family=Source+Code+Pro:wght@300&display=swap");
 *:hover {
   -webkit-transition: all ease-in 0.25s;
   transition: all ease-in 0.25s;
 }
 
 body {
-  background-colour: white;
+  background-color: black;
   padding: 1rem;
 }
 
 h1, p {
   text-align: center;
+}
+
+h1 {
+  font-family: "Rampart One", cursive;
+  color: #14debc;
+}
+
+p {
+  color: white;
+  font-family: "Source Code Pro", monospace;
 }
 
 .buttons {
@@ -35,14 +48,14 @@ h1, p {
   width: 200px;
   font-size: 25px;
   border: none;
-  background-color: orange;
-  color: white;
+  background-color: #14debc;
+  color: black;
   cursor: pointer;
 }
 
 .buttons button:hover {
-  background-color: white;
-  color: orange;
-  border: 3px solid orange;
+  background-color: black;
+  color: #14debc;
+  border: 3px solid #14debc;
 }
 /*# sourceMappingURL=style.css.map */

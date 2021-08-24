@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto+Mono:ital,wght@1,300&family=Source+Code+Pro:wght@300&display=swap');
+
 $primary_colour: white;
 $secondary_colour: black;
-$accent_colour: orange;
+$accent_colour: #14debc;
 $breakpoint: 500px;
 $padding: 1rem;
+$exp_font: 'Roboto Mono', monospace;
+$heading_font: 'Rampart One', cursive;
+$paragraph_font: 'Source Code Pro', monospace;
 
 @mixin responsive {
     @media only screen and (max-width: $breakpoint) {
