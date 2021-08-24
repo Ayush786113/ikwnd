@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  color: white;
+  border-color: black;
+  border-style: double;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem;
+  list-style: none;
+  border-style: ridge;
+  border-radius: 25px;
+  -webkit-box-shadow: -10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: -10px 10px rgba(0, 0, 0, 0.3);
+  background-color: orange;
+}
+/*# sourceMappingURL=viewpage.css.map */

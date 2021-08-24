@@ -1,0 +1,11 @@
+$primary_colour: white;
+$secondary_colour: black;
+$accent_colour: orange;
+$breakpoint: 500px;
+$padding: 1rem;
+
+@mixin responsive {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}

@@ -1,0 +1,48 @@
+*:hover {
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+body {
+  background-colour: white;
+  padding: 1rem;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  border: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: orange;
+  border: 3px solid orange;
+}
+/*# sourceMappingURL=style.css.map */

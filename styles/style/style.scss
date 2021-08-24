@@ -1,0 +1,45 @@
+@import '../config';
+
+*:hover{
+    transition: all ease-in 0.25s;
+}
+
+body{
+    background-colour: $primary_colour;
+    padding: $padding;
+}
+
+h1, p{
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding;
+    // @include responsive {
+    //     flex-direction: column;
+    //     height: 100vh;
+    //     &:button{
+    //         width: 100vw;
+    //         height: auto;
+    //     }
+    // }
+    button{
+        padding: $padding;
+        height: 100px;
+        width: 200px;
+        font-size: 25px;
+        border: none;
+        background-color: $accent_colour;
+        color: $primary_colour;
+        cursor: pointer;
+        &:hover{
+            background-color: $primary_colour;
+            color: $accent_colour;
+            border: 3px solid $accent_colour;
+        }
+    }
+}
