@@ -1,9 +1,5 @@
 @import '../config';
 
-*:hover{
-    transition: all ease-in 0.25s;
-}
-
 body{
     background-color: $secondary_colour;
     padding: $padding;
@@ -50,5 +46,23 @@ p{
             color: $accent_colour;
             border: 3px solid $accent_colour;
         }
+    }
+}
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 2vh;
+    .fab{
+        color: $accent_colour;
+        margin-right: $padding;
+        font-size: 25px;
+    }
+    span{
+        color: $accent_colour;
+        font-size: 25px;
     }
 }

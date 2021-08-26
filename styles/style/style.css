@@ -58,4 +58,28 @@ p {
   color: #14debc;
   border: 3px solid #14debc;
 }
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  bottom: 2vh;
+}
+
+footer .fab {
+  color: #14debc;
+  margin-right: 1rem;
+  font-size: 25px;
+}
+
+footer span {
+  color: #14debc;
+  font-size: 25px;
+}
 /*# sourceMappingURL=style.css.map */

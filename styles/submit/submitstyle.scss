@@ -1,0 +1,48 @@
+@import '../config';
+
+body{
+    background-color: $secondary_colour;
+}
+
+h1{
+    color: $accent_colour;
+    text-align: center;
+    font-size: 50px;
+    font-family: $heading_font;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding: $padding;
+    justify-content: center;
+    align-items: center;
+    input{
+        font-size: 24px;
+        margin-top: 1rem;
+        width: 80vw;
+        height: 10vh;
+    }
+    textarea{
+        font-size: 24px;;
+        margin-top: 1rem;
+        width: 80vw;
+        height: 20vh;
+    }
+    button{
+        padding: $padding;
+        margin-top: 1rem;
+        width: 80vw;
+        height: 10vh;
+        font-size: 25px;
+        border: none;
+        background-color: $accent_colour;
+        color: $secondary_colour;
+        cursor: pointer;
+        &:hover{
+            background-color: $secondary_colour;
+            color: $accent_colour;
+            border: 3px solid $accent_colour;
+        }
+    }
+}

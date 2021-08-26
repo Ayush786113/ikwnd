@@ -16,3 +16,7 @@ $paragraph_font: 'Source Code Pro', monospace;
         @content;
     }
 }
+
+*:hover{
+    transition: all ease-in 0.25s;
+}
