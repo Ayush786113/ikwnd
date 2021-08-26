@@ -39,6 +39,11 @@ h1 {
   margin-top: 1rem;
   width: 80vw;
   height: 10vh;
+  padding: 1rem;
+  border: none;
+  border-bottom: 3px solid #14debc;
+  background-color: black;
+  color: white;
 }
 
 .inputs textarea {
@@ -46,6 +51,11 @@ h1 {
   margin-top: 1rem;
   width: 80vw;
   height: 20vh;
+  padding: 1rem;
+  border: none;
+  border-bottom: 3px solid #14debc;
+  background-color: black;
+  color: white;
 }
 
 .inputs button {
