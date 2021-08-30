@@ -28,7 +28,9 @@ namestr = name.value;
 emailstr = email.value;
 expstr = exp.value;
 countrystr = country.value;
-let refstorage = firebase.storage().ref("Experiences");
+let refdatabase = firebase.database().ref("Experiences");
+let uniqueUser = firebase.database().ref("Users");
+let date = new Date().toISOString().slice(0, 10);
 if(namestr!="" && emailstr!="" && expstr!="" &&countrystr!="")
   {
      try {
@@ -36,12 +38,23 @@ if(namestr!="" && emailstr!="" && expstr!="" &&countrystr!="")
         Name: namestr,
         Email: emailstr,
         Experience: expstr,
-        Country: countrystr
+        Country: countrystr,
+        Date: date,
       });
       alert('Data Uploaded'+'\n Return to the previous page and view all the experiences.');
     } catch (error) {
       alert('Try again or contact the Developer');
     }
+      // .#$[]@
+    // let delimiters = ['.', '#', '$', '[', ']', '@']
+    // delimiters.forEach(element => {
+    //   emailstr.replace(String(element), '')
+    // });
+    // namestr.forEach(element =>{
+    //   console.log(element);
+    // })
+    // let userID = (namestr.trim()+countrystr.trim()+emailstr.trim()).trim()
+    // console.log(userID);
   }
   else
     alert('Please fill all the feilds to upload data')

@@ -24,7 +24,10 @@ function getData(){
       snapshot.forEach(function(childsnapshot){
         let dataReceived = childsnapshot.val();
         let li = document.createElement('li');
-        let data = dataReceived.Name+"\t \t"+dataReceived.Country+"\n \n"+dataReceived.Experience;
+        let date = null;
+        if (dataReceived.Date == null) { date = "Before Time" }
+        else{ date = dataReceived.Date }
+        let data = "Name: "+dataReceived.Name+"\t \t"+"Country: "+dataReceived.Country+"\t \t"+"Date: "+date+"\n \n"+dataReceived.Experience;
         li.innerText = data;
         list.append(li);
       });
