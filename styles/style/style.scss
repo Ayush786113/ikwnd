@@ -24,14 +24,6 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: $padding;
-    // @include responsive {
-    //     flex-direction: column;
-    //     height: 100vh;
-    //     &:button{
-    //         width: 100vw;
-    //         height: auto;
-    //     }
-    // }
     button{
         padding: $padding;
         height: 100px;
@@ -58,7 +50,7 @@ footer{
     bottom: 2vh;
     .fab{
         color: $accent_colour;
-        margin-right: $padding;
+        margin-right: $margin;
         font-size: 25px;
     }
     span{

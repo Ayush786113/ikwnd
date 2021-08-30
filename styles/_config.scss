@@ -5,17 +5,11 @@
 $primary_colour: white;
 $secondary_colour: black;
 $accent_colour: #14debc;
-$breakpoint: 500px;
 $padding: 1rem;
+$margin: 1rem;
 $exp_font: 'Roboto Mono', monospace;
 $heading_font: 'Rampart One', cursive;
 $paragraph_font: 'Source Code Pro', monospace;
-
-@mixin responsive {
-    @media only screen and (max-width: $breakpoint) {
-        @content;
-    }
-}
 
 *:hover{
     transition: all ease-in 0.25s;
