@@ -25,9 +25,9 @@ function getData(){
         let dataReceived = childsnapshot.val();
         let li = document.createElement('li');
         let date = null;
-        if (dataReceived.Date == null) { date = "Before Time" }
-        else{ date = dataReceived.Date }
-        let data = "Name: "+dataReceived.Name+"\t \t"+"Country: "+dataReceived.Country+"\t \t"+"Date: "+date+"\n \n"+dataReceived.Experience;
+        if (dataReceived.date == null) { date = "Before Time" }
+        else{ date = dataReceived.date }
+        let data = "Name: "+dataReceived.name+"\t \t"+"Country: "+dataReceived.country+"\t \t"+"Date: "+date+"\n \n"+dataReceived.experience;
         li.innerText = data;
         list.append(li);
       });

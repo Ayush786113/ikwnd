@@ -35,11 +35,11 @@ if(namestr!="" && emailstr!="" && expstr!="" &&countrystr!="")
   {
      try {
       refdatabase.push({
-        Name: namestr.trim(),
-        Email: emailstr.trim(),
-        Experience: expstr.trim(),
-        Country: countrystr.trim(),
-        Date: date.trim(),
+        name: namestr.trim(),
+        email: emailstr.trim(),
+        experience: expstr.trim(),
+        country: countrystr.trim(),
+        date: date.trim(),
       });
       alert('Data Uploaded'+'\n Return to the previous page and view all the experiences.');
     } catch (error) {
