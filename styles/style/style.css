@@ -59,6 +59,11 @@ p {
   border: 3px solid #14debc;
 }
 
+.android-image img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   width: 100vw;
   position: fixed;

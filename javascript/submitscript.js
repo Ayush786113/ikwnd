@@ -46,15 +46,24 @@ if(namestr!="" && emailstr!="" && expstr!="" &&countrystr!="")
       alert('Try again or contact the Developer');
     }
       // .#$[]@
-    // let delimiters = ['.', '#', '$', '[', ']', '@']
-    // delimiters.forEach(element => {
-    //   emailstr.replace(String(element), '')
-    // });
-    // namestr.forEach(element =>{
-    //   console.log(element);
-    // })
-    // let userID = (namestr.trim()+countrystr.trim()+emailstr.trim()).trim()
-    // console.log(userID);
+    let userID = namestr.replace(' ', '').trim()+countrystr.replace(' ', '').trim()+emailstr.trim();
+    userID = userID.replace(' ', '');
+    userID = userID.replace('.', '');
+    userID = userID.replace('#', '');
+    userID = userID.replace('$', '');
+    userID = userID.replace('[', '');
+    userID = userID.replace(']', '');
+    userID = userID.replace('@', '');
+    try{
+      uniqueUser.child(userID).set({
+        name: namestr,
+        country: countrystr,
+        email: emailstr,
+      })
+    }
+    catch(error){
+      console.log(error);
+    }
   }
   else
     alert('Please fill all the feilds to upload data')
